@@ -53,7 +53,7 @@ while read file; do
 	mv $WORKING_FILE $file
 	echo "Add license header into $file ..."
 	let COUNT+=1
-done < FILELIST
+done < $FILELIST
 
 echo "Total $COUNT files are processed"
 exit 0
